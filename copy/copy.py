@@ -13,5 +13,7 @@ def copy():
     controller = sys.argv[1:]
     if len(controller) == 1 and controller[0]== 'cp':
         print('copy [source] [destination]')
+    elif len(controller) == 2:
+        print('No destination provided')
 
 copy()
