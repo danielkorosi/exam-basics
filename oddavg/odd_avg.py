@@ -10,7 +10,7 @@ class OddAvg():
         if sum(self.odd_list) > 0:
             average = sum(self.odd_list)/(len(self.odd_list))
         else:
-            average = 0
+            average = 'No odd numbers in the list'
         return average
 
 example_list = OddAvg()
