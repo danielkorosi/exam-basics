@@ -6,3 +6,12 @@
 # No destination provided
 # When both arguments provided and the source is a file
 # Read all contents from it and write it to the destination
+
+import sys
+
+def copy():
+    controller = sys.argv[1:]
+    if len(controller) == 1 and controller[0]== 'cp':
+        print('copy [source] [destination]')
+
+copy()
