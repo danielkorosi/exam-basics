@@ -16,9 +16,9 @@ def copy():
     elif len(controller) == 2:
         print('No destination provided')
     elif len(controller) == 3:
-            read()
+            read_write()
 
-def read():
+def read_write():
     try:
         controller = sys.argv[1:]
         source = open(str(controller[1]),'r')
