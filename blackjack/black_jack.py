@@ -20,10 +20,11 @@ class Card():
         self.value = value
         self.color = color
 
-class Deck():
+class Deck(Card):
     card_list = []
     def __init__(self, n):
         self.n = n
+        self.card_list.append()
 
     def draw():
 
