@@ -11,6 +11,8 @@ class TestOddAverage(unittest.TestCase):
     def test_for_odd_selection(self):
         test_list = OddAvg()
         self.assertEqual(test_list.odd_average([7,2,4,6,8]), 7)
-
+    def test_for_only_non_odds(self):
+        test_list = OddAvg()
+        self.assertEqual(test_list.odd_average([4,4,2,0]), 0)
 if __name__ == "__main__":
     unittest.main()

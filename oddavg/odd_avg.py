@@ -7,9 +7,12 @@ class OddAvg():
         for i in num_list:
             if i % 2 != 0:
                 self.odd_list.append(i)
-        average = sum(self.odd_list)/(len(self.odd_list))
+        if sum(self.odd_list) > 0:
+            average = sum(self.odd_list)/(len(self.odd_list))
+        else:
+            average = 0
         return average
 
 example_list = OddAvg()
 
-print(example_list.odd_average([2,3,5,0,6,7,1]))
+print(example_list.odd_average([0,2,3,5]))
