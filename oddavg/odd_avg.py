@@ -7,5 +7,7 @@ def odd_average(num_list=[]):
     for i in num_list:
         if i % 2 != 0:
             odd_list.append(i)
+    average = sum(odd_list)/(len(odd_list)+1)
+    return average
 
-print(odd_average([2,3,7,45,22,12,9]))
+print(odd_average([2,3,7,13,6]))
