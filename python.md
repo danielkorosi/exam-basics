@@ -36,14 +36,16 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
+1: signature of the function
+2: function name
+3: parameter variable (from another point of view: argument)
+4: body of the function
+5: local variable
+6: return statement
+7: return value
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
 [add your answer here]
+In object-oriented programming, the constructor is responsible for initializing a class. In Python this is done by the __init__ method, which is called right after creating the class. The init method is different from 'regular' methods of the given class since it is called automatically every time a new instance of a class is created.
+In the contructor, the argument 'self' has to be added in any case. The word self is not a keyword but a convention to use it always as the first argument of the init method. 'Self' refers to the object of the class and so to every instances of the class. This is in contrast with the first arguments of "regular" methods, which are specific to a given instance. So the constructor is favoured to be applied when certain variables or procedures need to be shared among all instances of class. 
