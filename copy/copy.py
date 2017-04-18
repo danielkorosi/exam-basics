@@ -16,16 +16,14 @@ def copy():
     elif len(controller) == 2:
         print('No destination provided')
     elif len(controller) == 3:
-        read()
+            read()
 
 def read():
     try:
         controller = sys.argv[1:]
-        file_1 = str(controller[1])
-        source = open(file_1,'r')
+        source = open(str(controller[1]),'r')
         source = source.read()
-        file_2 = str(controller[2])
-        dest = open(file_2,'a')
+        dest = open(str(controller[2]),'a')
         dest.write(source)
     except FileNotFoundError:
         print('One or both of your files are not found')
